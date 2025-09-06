@@ -1,0 +1,10 @@
+<div class="flex justify-center space-x-2 xs:space-x-3 my-4 xs:my-5">
+  <a 
+    *ngFor="let social of socialIcons" 
+    [href]="social.href" 
+    class="border border-gray-300 rounded-lg w-8 h-8 xs:w-10 xs:h-10 flex items-center justify-center text-gray-600 hover:text-primary hover:border-primary hover:shadow-md transition-all duration-300 text-sm xs:text-base"
+    [title]="social.name"
+  >
+    <i [class]="social.icon"></i>
+  </a>
+</div>
